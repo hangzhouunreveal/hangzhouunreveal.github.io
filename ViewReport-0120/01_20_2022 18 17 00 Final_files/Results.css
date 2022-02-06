@@ -1,0 +1,190 @@
+﻿/* Define classes to display lab and radiology result reports */
+
+.result-container {
+    margin: 0;
+    padding: 0;
+    background-color: #eeeeee;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.actions h3 {
+    font-size: 14px;
+    font-weight: 700;
+    margin: 5px 0 0 -20px;
+}
+
+.actions .btn-link {
+    padding: 0 12px 0 12px;
+}
+
+.menu {
+    width: 200px;
+    margin: 4px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+    .menu .actions {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+.oldpaper {
+    margin: 8px;
+    padding-left: 25px;
+    background: white;
+    width: 700px;
+}
+
+/****************************************************************/
+/* From here down are the classes embedded in result snapshots. */
+
+.results h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(0, 0, 192);
+    margin-top: 5px;
+    margin-left: -20px;
+}
+
+.results h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: -20px;
+}
+
+.paper {
+    margin: 8px;
+    padding-left: 25px;
+    background: white;
+    max-width: 511pt; /* no wider than printed paper (7.1 inches wide because 0.7 inch margins) */
+}
+
+.result table {
+    width: 95%;
+    padding: 0;
+    border-spacing: 0;
+    margin-top: 12px;
+    table-layout: fixed;
+}
+
+.result td {
+    font-size: 1em;
+    padding: 0 10px 5px 22px;
+    text-indent: -22px;
+    vertical-align: top;
+}
+
+.result th {
+    text-align: left;
+    background-color: #eeeeee;
+    padding: 0 10px 0 0;
+}
+
+.result p {
+    margin-top: 5px;
+}
+
+.result .test-name {
+    width: 33%;
+}
+
+.result .test-value {
+    width: 25%;
+}
+
+.result .test-flags {
+    width: 9%;
+}
+
+.result .test-range {
+    width: 25%;
+}
+
+.result .abnormal {
+    color: red;
+    font-weight: bold;
+}
+
+.result .narrative {
+    font-family: monospace;
+}
+
+.result .narrative-indented {
+    font-family: monospace;
+    padding-left: 22px;
+}
+
+.result .narrative-result {
+    padding-left: 22px;
+    padding-top: 10px;
+}
+
+.result .big-result {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.result .padded-result {
+    padding: 10px 10px 10px 10px;
+    text-indent: 0;
+}
+
+.result .normal-result {
+    background-color: rgb(182, 215, 168);
+}
+
+.result .abnormal-result {
+    background-color: rgb(234, 153, 153);
+}
+
+.scanimg {
+    width: 100%;
+    margin-left: -25px;
+}
+
+.scanpdf {
+    width: 100%;
+    margin-left: -25px;
+    height: 825px;
+}
+
+.scanhtml {
+    width: 100%;
+    margin-left: -25px;
+    height: 825px;
+}
+
+.results dl {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20pt;
+    margin-bottom: 0;
+}
+
+.results dt {
+    float: left;
+    width: 60pt;
+}
+
+    .results dt:after {
+        content: ":";
+    }
+
+.results dd {
+    margin: 0 0 0 80pt;
+    max-width: 200pt;
+}
+
+.truncate {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+img {
+    max-width: 150%
+}
